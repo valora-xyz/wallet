@@ -1,6 +1,6 @@
-import { createApp } from '@divvi/mobile'
 import { registerRootComponent } from 'expo'
 import Constants from 'expo-constants'
+import { createApp } from 'wallet-stack'
 import Logo from './assets/Logo'
 import WelcomeLogo from './assets/WelcomeLogo'
 import background from './assets/background.jpg'
