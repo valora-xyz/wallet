@@ -242,7 +242,7 @@ module.exports = () => {
           projectId: '8593729d-4d16-40aa-b712-7f96b2293c9f',
         },
       },
-      owner: 'divvi',
+      owner: 'valora-xyz',
     },
   }
 }
