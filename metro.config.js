@@ -1,5 +1,5 @@
 // Learn more https://docs.expo.io/guides/customizing-metro
-const { getDefaultConfig } = require('@divvi/mobile/metro-config')
+const { getDefaultConfig } = require('wallet-stack/metro-config')
 const { withSentryConfig } = require('@sentry/react-native/metro')
 
 /** @type {import('expo/metro-config').MetroConfig} */

@@ -27,16 +27,16 @@
     },
     {
       // Disable dependencies updates
-      // As they need to be compatible with the @divvi/mobile peerDependencies
+      // As they need to be compatible with the wallet-stack peerDependencies
       matchDepTypes: ['dependencies'],
       // Exclude @divvi/* packages from this group
       matchPackageNames: ['!@divvi/*'],
       enabled: false,
     },
     {
-      // For now follow the alpha tag for @divvi/mobile
+      // For now follow the alpha tag for wallet-stack
       // We'll remove this once we're ready to move to a stable release
-      matchPackageNames: ['@divvi/mobile'],
+      matchPackageNames: ['wallet-stack'],
       followTag: 'alpha',
       schedule: ['at any time'],
     },
