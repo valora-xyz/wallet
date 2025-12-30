@@ -1,11 +1,11 @@
 {
-  "extends": "@divvi/mobile/tsconfig.base",
+  "extends": "wallet-stack/tsconfig.base",
   "compilerOptions": {
     "resolveJsonModule": true
   },
   // TODO: we should be able to remove the need to include the mobile package index.d.ts once we're able to ship declaration files
   "files": [],
-  "include": ["**/*", "./node_modules/@divvi/mobile/src/index.d.ts"],
+  "include": ["**/*", "./node_modules/wallet-stack/src/index.d.ts"],
   // Ad hoc fix for typecheck, due to knip being ESM
   "exclude": ["knip.ts"]
 }
