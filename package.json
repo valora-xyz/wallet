@@ -6,7 +6,7 @@
   "private": true,
   "main": "index.tsx",
   "engines": {
-    "node": "24.11.1"
+    "node": "24.12.0"
   },
   "scripts": {
     "prebuild": "expo prebuild --clean",
@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "@divvi/cookies": "^6.2.3",
-    "@divvi/mobile": "^1.0.0-alpha.121",
     "@divvi/react-native-fs": "^2.20.1",
     "@divvi/react-native-keychain": "^10.0.0-divvi.1",
     "@google-cloud/recaptcha-enterprise-react-native": "^18.8.0",
@@ -95,7 +94,8 @@
     "react-native-share": "^11.1.0",
     "react-native-simple-toast": "^3.3.2",
     "react-native-svg": "^15.11.2",
-    "react-native-video": "^6.16.1"
+    "react-native-video": "^6.16.1",
+    "wallet-stack": "^1.0.0-alpha.121"
   },
   "devDependencies": {
     "@actions/github": "^5.1.1",
