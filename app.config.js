@@ -179,7 +179,7 @@ module.exports = () => {
           },
         ],
         [
-          '@divvi/mobile',
+          'wallet-stack',
           {
             // Used in the User-Agent header
             appName: APP_REGISTRY_NAME,
