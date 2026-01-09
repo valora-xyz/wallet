@@ -99,7 +99,7 @@ module.exports = () => {
         }),
       },
       android: {
-        edgeToEdgeEnabled: false,
+        edgeToEdgeEnabled: true,
         adaptiveIcon: {
           foregroundImage: './assets/icon/adaptive-foreground.png',
           backgroundImage: './assets/icon/adaptive-background.png',
