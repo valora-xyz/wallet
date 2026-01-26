@@ -22,7 +22,6 @@ const App = createApp({
   },
   features: {
     cloudBackup: true,
-    segment: { apiKey: process.env.EXPO_PUBLIC_SEGMENT_API_KEY! },
     sentry: { clientUrl: process.env.EXPO_PUBLIC_SENTRY_CLIENT_URL! },
     statsig: { apiKey: process.env.EXPO_PUBLIC_STATSIG_API_KEY! },
     walletConnect: {
