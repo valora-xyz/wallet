@@ -1156,11 +1156,6 @@
   resolved "https://registry.yarnpkg.com/@divvi/react-native-keychain/-/react-native-keychain-10.0.0-divvi.1.tgz#33c0464880d248af0bc69f44b0f2e6f95b032ff3"
   integrity sha512-3UuNLwnsNuDUm5N5318a/B1MBpyCdoJl9ZR7ehqEQukGRMvGvd3jAjisWSF1H6pnc96ly5fC/H0Z7gbjIdudlg==
 
-"@divvi/referral-sdk@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@divvi/referral-sdk/-/referral-sdk-2.2.0.tgz#e624ad17e8e0355db6053300569b937f7f9b6ff3"
-  integrity sha512-C02v8YY+H6TunWz1lUGU04pJzaOrnjVbe12Gv/iFo1C9NNE1+o5oVR/xGuxfXqsPJ1tVlvS0s+5kqQEDAl8Blg==
-
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
@@ -12373,14 +12368,13 @@ walker@^1.0.7, walker@^1.0.8:
   dependencies:
     makeerror "1.0.12"
 
-wallet-stack@^1.0.0-alpha.122:
-  version "1.0.0-alpha.122"
-  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.122.tgz#91bf79660f57307fd95dcd7dd42623f5896f56d0"
-  integrity sha512-YymO6uQmeUXsyZCKqCKckbaLh59azT/+sowjU4EPpgIUUrYmT/oDAd+Auj8NoqEGKuh7MUJTeKf43gAWPQEFYg==
+wallet-stack@^1.0.0-alpha.123:
+  version "1.0.0-alpha.123"
+  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.123.tgz#913c11b4f7202d65386c13571c1c4188e008dbcc"
+  integrity sha512-rNLvY1ByNxGEkTEEMuySCR79AA//CYrMSt3prq5Jg+nQn1Mkr5LwkS5mrdxwrVagtRu20Q7upfHDdRUnsHTMYw==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^2.0.1"
-    "@divvi/referral-sdk" "^2.2.0"
     "@fiatconnect/fiatconnect-sdk" "^0.5.74"
     "@fiatconnect/fiatconnect-types" "^13.3.11"
     "@gorhom/bottom-sheet" "^5.1.1"
