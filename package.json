@@ -95,7 +95,7 @@
     "react-native-simple-toast": "^3.3.2",
     "react-native-svg": "^15.11.2",
     "react-native-video": "^6.16.1",
-    "wallet-stack": "^1.0.0-alpha.123"
+    "wallet-stack": "^1.0.0-alpha.124"
   },
   "devDependencies": {
     "@actions/github": "^5.1.1",

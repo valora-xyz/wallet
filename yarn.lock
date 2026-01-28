@@ -12368,10 +12368,10 @@ walker@^1.0.7, walker@^1.0.8:
   dependencies:
     makeerror "1.0.12"
 
-wallet-stack@^1.0.0-alpha.123:
-  version "1.0.0-alpha.123"
-  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.123.tgz#913c11b4f7202d65386c13571c1c4188e008dbcc"
-  integrity sha512-rNLvY1ByNxGEkTEEMuySCR79AA//CYrMSt3prq5Jg+nQn1Mkr5LwkS5mrdxwrVagtRu20Q7upfHDdRUnsHTMYw==
+wallet-stack@^1.0.0-alpha.124:
+  version "1.0.0-alpha.124"
+  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.124.tgz#4c71e05a99d6ddbda30dca0e11025e99d165a63e"
+  integrity sha512-40a0Ap88ShA18QUAInJcY8TBaQ+nSK7vIpgUM1MBzTg8aH+/dOCJVQ2PgFp22oZ869vYUUCb7t6HYTN4SGj+1Q==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^2.0.1"
