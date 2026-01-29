@@ -70,6 +70,7 @@ jobs:
             --title "chore: bump app version to ${VERSION}" \
             --body "Bump app version to ${VERSION}")"
 
-          # Approve and merge using github-actions (different identity than valora-actions)
+          # Approve using github-actions (different identity than valora-actions)
           GH_TOKEN="$GITHUB_ACTIONS_TOKEN" gh pr review --approve "$PR_URL" --repo "$GITHUB_REPOSITORY"
-          GH_TOKEN="$GITHUB_ACTIONS_TOKEN" gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
+
+          gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
