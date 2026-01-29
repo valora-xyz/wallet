@@ -32,10 +32,6 @@ const config: KnipConfig = {
     'licenses', // Yarn command
     'scripts/generate-release-notes.ts', // Used by release-nightly workflow
   ],
-  ignore: [
-    '.github/scripts/autoApprovePr.js', // Used by bump-app-version workflow
-    '.github/scripts/enableAutomergeOnPr.js', // Used by bump-app-version workflow
-  ],
 }
 
 export default config
