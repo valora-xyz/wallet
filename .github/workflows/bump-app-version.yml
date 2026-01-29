@@ -37,7 +37,7 @@ jobs:
           set -euo pipefail
 
           git config user.name "valora-actions[bot]"
-          git config user.email "${{ vars.VALORA_ACTIONS_APP_ID }}+valora-actions[bot]@users.noreply.github.com"
+          git config user.email "258016485+valora-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${VALORA_ACTIONS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
           BRANCH="valora-actions/bump-app-version-${GITHUB_RUN_ID}"
