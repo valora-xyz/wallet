@@ -66,7 +66,8 @@ jobs:
             --repo "$GITHUB_REPOSITORY" \
             --base main \
             --head "$BRANCH" \
-            --title "chore: bump app version to ${VERSION}")"
+            --title "chore: bump app version to ${VERSION}" \
+            --body "")"
 
           GH_TOKEN="$VALORA_ACTIONS_TOKEN" gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
 
