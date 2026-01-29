@@ -23,23 +23,23 @@ jobs:
         with:
           ref: main
       - uses: ./.github/actions/yarn-install
-      - name: Generate `valora-approve` app token
-        id: app-token
+      - name: Generate Valora Actions Token
+        id: valora-actions-token
         uses: actions/create-github-app-token@v1
         with:
-          app-id: ${{ vars.VALORA_APPROVE_APP_ID }}
-          private-key: ${{ secrets.VALORA_APPROVE_APP_PRIVATE_KEY }}
+          app-id: ${{ vars.VALORA_ACTIONS_APP_ID }}
+          private-key: ${{ secrets.VALORA_ACTIONS_PRIVATE_KEY }}
       - name: Bump App Version
         env:
-          GH_TOKEN: ${{ github.token }}
-          VALORA_APPROVE_APP_TOKEN: ${{ steps.app-token.outputs.token }}
+          GH_TOKEN: ${{ steps.valora-actions-token.outputs.token }}
+          GITHUB_ACTIONS_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "valora-actions[bot]"
+          git config user.email "${{ vars.VALORA_ACTIONS_APP_ID }}+valora-actions[bot]@users.noreply.github.com"
 
-          BRANCH="valora-bot/bump-app-version-${GITHUB_RUN_ID}"
+          BRANCH="valora-actions/bump-app-version-${GITHUB_RUN_ID}"
           git checkout -b "$BRANCH"
 
           yarn version --no-git-tag-version --minor
@@ -59,6 +59,8 @@ jobs:
           fi
 
           git commit -m "chore: bump app version to ${VERSION}"
+
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push --set-upstream origin "$BRANCH"
 
           PR_URL="$(gh pr create \
@@ -68,7 +70,7 @@ jobs:
             --title "chore: bump app version to ${VERSION}" \
             --body "Bump app version to ${VERSION}")"
 
-          # Approve using `valora-approve` app identity
-          GH_TOKEN="$VALORA_APPROVE_APP_TOKEN" gh pr review --approve "$PR_URL" --repo "$GITHUB_REPOSITORY"
+          # Approve using github-actions (different identity than valora-actions)
+          GH_TOKEN="$GITHUB_ACTIONS_TOKEN" gh pr review --approve "$PR_URL" --repo "$GITHUB_REPOSITORY"
 
           gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
