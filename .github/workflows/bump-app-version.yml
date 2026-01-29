@@ -23,9 +23,16 @@ jobs:
         with:
           ref: main
       - uses: ./.github/actions/yarn-install
+      - name: Generate `valora-approve` app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.VALORA_APPROVE_APP_ID }}
+          private-key: ${{ secrets.VALORA_APPROVE_APP_PRIVATE_KEY }}
       - name: Bump App Version
         env:
           GH_TOKEN: ${{ github.token }}
+          VALORA_APPROVE_APP_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           set -euo pipefail
 
@@ -37,6 +44,13 @@ jobs:
 
           yarn version --no-git-tag-version --minor
           VERSION="$(node -p "require('./package.json').version")"
+
+          # Verify only package.json was modified
+          CHANGED_FILES=$(git diff --name-only)
+          if [[ "$CHANGED_FILES" != "package.json" ]]; then
+            echo "Unexpected files modified: $CHANGED_FILES"
+            exit 1
+          fi
 
           git add package.json
           if git diff --cached --quiet; then
@@ -54,5 +68,7 @@ jobs:
             --title "chore: bump app version to ${VERSION}" \
             --body "Bump app version to ${VERSION}")"
 
-          gh pr review --approve "$PR_URL" --repo "$GITHUB_REPOSITORY"
+          # Approve using `valora-approve` app identity
+          GH_TOKEN="$VALORA_APPROVE_APP_TOKEN" gh pr review --approve "$PR_URL" --repo "$GITHUB_REPOSITORY"
+
           gh pr merge --auto --squash --delete-branch "$PR_URL" --repo "$GITHUB_REPOSITORY"
