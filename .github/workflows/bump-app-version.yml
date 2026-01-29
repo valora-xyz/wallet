@@ -71,4 +71,4 @@ jobs:
           # Approve using `valora-approve` app identity
           GH_TOKEN="$VALORA_APPROVE_APP_TOKEN" gh pr review --approve "$PR_URL" --repo "$GITHUB_REPOSITORY"
 
-          gh pr merge --auto --squash --delete-branch "$PR_URL" --repo "$GITHUB_REPOSITORY"
+          gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
