@@ -31,13 +31,14 @@ jobs:
           private-key: ${{ secrets.VALORA_ACTIONS_PRIVATE_KEY }}
       - name: Bump App Version
         env:
-          GH_TOKEN: ${{ steps.valora-actions-token.outputs.token }}
+          VALORA_ACTIONS_TOKEN: ${{ steps.valora-actions-token.outputs.token }}
           GITHUB_ACTIONS_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
           git config user.name "valora-actions[bot]"
           git config user.email "${{ vars.VALORA_ACTIONS_APP_ID }}+valora-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${VALORA_ACTIONS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
           BRANCH="valora-actions/bump-app-version-${GITHUB_RUN_ID}"
           git checkout -b "$BRANCH"
@@ -59,11 +60,9 @@ jobs:
           fi
 
           git commit -m "chore: bump app version to ${VERSION}"
-
-          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push --set-upstream origin "$BRANCH"
 
-          PR_URL="$(gh pr create \
+          PR_URL="$(GH_TOKEN="$VALORA_ACTIONS_TOKEN" gh pr create \
             --repo "$GITHUB_REPOSITORY" \
             --base main \
             --head "$BRANCH" \
@@ -73,4 +72,4 @@ jobs:
           # Approve using github-actions (different identity than valora-actions)
           GH_TOKEN="$GITHUB_ACTIONS_TOKEN" gh pr review --approve "$PR_URL" --repo "$GITHUB_REPOSITORY"
 
-          gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
+          GH_TOKEN="$VALORA_ACTIONS_TOKEN" gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
