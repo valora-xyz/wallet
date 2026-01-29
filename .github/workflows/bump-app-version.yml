@@ -19,13 +19,13 @@ jobs:
   bump-app-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           ref: main
       - uses: ./.github/actions/yarn-install
       - name: Generate Valora Actions Token
         id: valora-actions-token
-        uses: actions/create-github-app-token@v1
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
         with:
           app-id: ${{ vars.VALORA_ACTIONS_APP_ID }}
           private-key: ${{ secrets.VALORA_ACTIONS_PRIVATE_KEY }}
