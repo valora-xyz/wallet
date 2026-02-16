@@ -29,8 +29,6 @@
       // Disable dependencies updates
       // As they need to be compatible with the wallet-stack peerDependencies
       matchDepTypes: ['dependencies'],
-      // Exclude @divvi/* packages from this group
-      matchPackageNames: ['!@divvi/*'],
       enabled: false,
     },
     {
@@ -39,6 +37,8 @@
       matchPackageNames: ['wallet-stack'],
       followTag: 'alpha',
       schedule: ['at any time'],
+      // Override the dependencies disable rule above
+      enabled: true,
     },
     {
       // Disable updates for expo-splash-screen to support the full-screen splash on Android
