@@ -9,6 +9,15 @@
   // Limit number of concurrent renovate branches/PRs, to avoid spamming the repo
   prConcurrentLimit: 4,
 
+  // Enable security vulnerability updates
+  vulnerabilityAlerts: {
+    enabled: true,
+    labels: ['security'],
+    schedule: ['at any time'],
+    prPriority: 10,
+    stabilityDays: 0,
+  },
+
   // The order of objects in the packageRules array does matter,
   // in the sense that rules declared later (towards the end of the array)
   // overwrite values of an also-matching rule declared earlier.
