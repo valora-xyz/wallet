@@ -24,6 +24,9 @@ const App = createApp({
     walletConnect: {
       projectId: process.env.EXPO_PUBLIC_WALLET_CONNECT_PROJECT_ID!,
     },
+    mixpanel: {
+      token: process.env.EXPO_PUBLIC_MIXPANEL_TOKEN!,
+    },
   },
   themes: {
     default: {

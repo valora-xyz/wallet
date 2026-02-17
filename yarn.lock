@@ -9158,6 +9158,14 @@ minizlib@^3.1.0:
   dependencies:
     minipass "^7.1.2"
 
+mixpanel-react-native@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/mixpanel-react-native/-/mixpanel-react-native-3.2.1.tgz#a44dd318ec493696796253b46a2f086d8402e403"
+  integrity sha512-TVHk+kt+BIXcT4KVlSsKaUMpmIriFd45nWvawpVYHugG4DXQ4ylt27KijXu4ojsW/kJaBAFRmq3c/cClj074uQ==
+  dependencies:
+    react-native-get-random-values "^1.9.0"
+    uuid "^9.0.1"
+
 mkdirp@^0.5.1:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.6.tgz#7def03d2432dcae4ba1d611445c48396062255f6"
@@ -10165,7 +10173,7 @@ react-native-gesture-handler@^2.23.1:
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
 
-react-native-get-random-values@1.x:
+react-native-get-random-values@1.x, react-native-get-random-values@^1.9.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/react-native-get-random-values/-/react-native-get-random-values-1.11.0.tgz#1ca70d1271f4b08af92958803b89dccbda78728d"
   integrity sha512-4BTbDbRmS7iPdhYLRcz3PGFIpFJBwNZg9g42iwa2P6FOv9vZj/xJc678RZXnLNZzd0qd7Q3CCF6Yd+CU2eoXKQ==
@@ -12368,10 +12376,10 @@ walker@^1.0.7, walker@^1.0.8:
   dependencies:
     makeerror "1.0.12"
 
-wallet-stack@^1.0.0-alpha.125:
-  version "1.0.0-alpha.125"
-  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.125.tgz#54a19d892481cb9bfa4cc4e9d36075956740dc9b"
-  integrity sha512-UGArRdHNskCJnefGNJP2Ih1kL3FRnTik6Fru06/Ndh2XUfi8SndKDz4lMRBy0dBizhgGv+rQyQBYsPXJof+GdA==
+wallet-stack@^1.0.0-alpha.127:
+  version "1.0.0-alpha.127"
+  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.127.tgz#f90c7bbb58af38a2432752637f49a127cb662c57"
+  integrity sha512-CawC3NYPkgb+xQ3edbp9bR5C8cRYCVL2rN5Lxpm7jDy1uQmMuolow/L4TsmYCeulhHx/aLeY/ubC80IHJ4tNlQ==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^2.0.1"
@@ -12413,6 +12421,7 @@ wallet-stack@^1.0.0-alpha.125:
     is-ip "^3.1.0"
     jwt-decode "^4.0.0"
     lodash "^4.17.21"
+    mixpanel-react-native "^3.2.1"
     permissionless "^0.2.57"
     react-async-hook "^4.0.0"
     react-i18next "^15.4.1"
