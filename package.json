@@ -69,6 +69,7 @@
     "expo-splash-screen": "~0.27.7",
     "expo-status-bar": "~2.2.3",
     "lottie-react-native": "^5.1.6",
+    "mixpanel-react-native": "^3.2.1",
     "react": "19.0.0",
     "react-native": "0.79.6",
     "react-native-adjust": "^4.38.1",
@@ -95,7 +96,7 @@
     "react-native-simple-toast": "^3.3.2",
     "react-native-svg": "^15.11.2",
     "react-native-video": "^6.16.1",
-    "wallet-stack": "^1.0.0-alpha.125"
+    "wallet-stack": "^1.0.0-alpha.127"
   },
   "devDependencies": {
     "@actions/github": "^5.1.1",
