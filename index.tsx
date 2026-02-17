@@ -26,7 +26,7 @@ const App = createApp({
     },
     mixpanel: {
       token: process.env.EXPO_PUBLIC_MIXPANEL_TOKEN!,
-    }
+    },
   },
   themes: {
     default: {
