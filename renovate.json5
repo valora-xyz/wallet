@@ -1,5 +1,5 @@
 {
-  extends: ['github>valora-inc/renovate-config:default.json5'],
+  extends: ['github>valora-xyz/renovate-config:default.json5'],
 
   // Restrict semantic commit type to "chore"
   // See: https://docs.renovatebot.com/presets-default/#semanticprefixfixdepschoreothers
@@ -14,8 +14,7 @@
     enabled: true,
     labels: ['security'],
     schedule: ['at any time'],
-    prPriority: 10,
-    stabilityDays: 0,
+    minimumReleaseAge: null,
   },
 
   // The order of objects in the packageRules array does matter,
@@ -46,6 +45,8 @@
       matchPackageNames: ['wallet-stack'],
       followTag: 'alpha',
       schedule: ['at any time'],
+      minimumReleaseAge: null,
+      prPriority: 10,
       // Override the dependencies disable rule above
       enabled: true,
     },
