@@ -27,10 +27,11 @@
       prPriority: 2,
     },
     {
-      // Node.js version is managed by the eas-node-sync CI job
-      // See .github/workflows/check.yml
-      matchPackageNames: ['node'],
-      enabled: false,
+      // Allow renovate to update node
+      matchDepTypes: ['engines'],
+      enabled: true,
+      // a bit higher priority for node updates
+      prPriority: 3,
     },
     {
       // Disable dependencies updates
