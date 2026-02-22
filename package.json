@@ -126,5 +126,8 @@
     "typescript": "^5.9.3",
     "yargs": "^17.7.2"
   },
-  "prettier": "@valora/prettier-config"
+  "prettier": "@valora/prettier-config",
+  "resolutions": {
+    "**/minimatch": "10.2.1"
+  }
 }
