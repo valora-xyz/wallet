@@ -1,6 +1,6 @@
 {
   "name": "@valora/wallet",
-  "version": "1.124.0",
+  "version": "1.125.0",
   "author": "Valora Inc",
   "license": "Apache-2.0",
   "private": true,
@@ -100,12 +100,12 @@
   },
   "devDependencies": {
     "@actions/github": "^5.1.1",
-    "@babel/core": "^7.28.5",
+    "@babel/core": "^7.29.0",
     "@expo/config-plugins": "~10.1.2",
-    "@types/react": "~19.2.7",
+    "@types/react": "~19.2.14",
     "@types/shelljs": "^0.10.0",
     "@types/yargs": "^17.0.35",
-    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
     "@valora/eslint-config-typescript": "^1.1.51",
     "@valora/prettier-config": "^0.0.1",
     "chalk": "^4.1.2",
