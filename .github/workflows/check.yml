@@ -72,20 +72,15 @@ jobs:
     name: EAS Node.js Version Sync
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3.0.0
+      - name: Generate Valora Actions Token
+        id: valora-actions-token
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
         with:
-          project_id: celo-mobile-mainnet
-          credentials_json: ${{ secrets.MAINNET_SERVICE_ACCOUNT_KEY }}
-      - name: Google Secrets
-        id: google-secrets
-        uses: google-github-actions/get-secretmanager-secrets@bc9c54b29fdffb8a47776820a7d26e77b379d262 # v3.0.0
-        with:
-          secrets: |-
-            VALORA_BOT_TOKEN:celo-mobile-mainnet/VALORA_BOT_TOKEN
+          app-id: ${{ vars.VALORA_ACTIONS_APP_ID }}
+          private-key: ${{ secrets.VALORA_ACTIONS_PRIVATE_KEY }}
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          token: ${{ steps.google-secrets.outputs.VALORA_BOT_TOKEN }}
-          # See https://github.com/actions/checkout?tab=readme-ov-file#push-a-commit-to-a-pr-using-the-built-in-token
+          token: ${{ steps.valora-actions-token.outputs.token }}
           ref: ${{ github.head_ref || github.ref }}
       - uses: ./.github/actions/yarn-install
       - run: yarn sync-eas-node-version
@@ -100,8 +95,8 @@ jobs:
       - name: Commit EAS node version
         if: "${{ steps.eas-node-version.outputs.changes == 'true' && github.event_name == 'pull_request' && !startsWith(github.event.head_commit.message, 'chore: auto sync eas node version') }}"
         run: |
-          git config user.name "Divvi Bot"
-          git config user.email "89419329+divvi-bot@users.noreply.github.com"
+          git config user.name "valora-actions[bot]"
+          git config user.email "258016485+valora-actions[bot]@users.noreply.github.com"
           git add eas.json
           git commit -m "chore: auto sync eas node version"
           git push
