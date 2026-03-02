@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-#####
 # Sends a push notification to a specific device
-#
-#####
-
 
 # celo-mobile-alfajores
 # https://console.firebase.google.com/project/celo-mobile-alfajores/settings/cloudmessaging/ios:org.celo.mobile.alfajores
@@ -13,7 +9,7 @@ FCM_SERVER_KEY=""
 USER_FCM_TOKEN=""
 
 curl -X POST --header "Authorization: key=$FCM_SERVER_KEY" \
-        --Header "Content-Type: application/json" \
+        --header "Content-Type: application/json" \
         https://fcm.googleapis.com/fcm/send \
         -d '{
       "notification": {
