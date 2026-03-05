@@ -52,7 +52,7 @@
     },
     {
       // Disable updates for expo-splash-screen to support the full-screen splash on Android
-      // See https://github.com/valora-inc/wallet/pull/6556
+      // See https://github.com/valora-xyz/wallet/pull/6556
       matchPackageNames: ['expo-splash-screen'],
       enabled: false,
     },

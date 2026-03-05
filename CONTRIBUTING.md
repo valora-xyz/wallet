@@ -6,9 +6,9 @@ Valora is open source and we welcome open participation!
 
 Find an area that is of interest and you would like to help with. Look
 for issues that are tagged as "[good first
-issue](https://github.com/valora-inc/wallet/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)"
+issue](https://github.com/valora-xyz/wallet/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)"
 or "[help
-wanted](https://github.com/valora-inc/wallet/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)"
+wanted](https://github.com/valora-xyz/wallet/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)"
 to get started. If you’d like to dig deeper, feel free to look at
 other labels and TODO’s in code comments. If there’s an issue you’re
 interested in contributing to or taking over, assign yourself to it
