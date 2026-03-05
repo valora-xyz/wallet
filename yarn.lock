@@ -10211,9 +10211,9 @@ react-native-config@^1.5.5:
     "@babel/preset-react" "^7.24.7"
     babel-jest "^29.7.0"
 
-"react-native-contacts@https://github.com/valora-inc/react-native-contacts#9940121":
+"react-native-contacts@https://github.com/valora-xyz/react-native-contacts#9940121":
   version "5.0.0"
-  resolved "https://github.com/valora-inc/react-native-contacts#9940121a0512d00fa771273805e2c41996af6b23"
+  resolved "https://github.com/valora-xyz/react-native-contacts#9940121a0512d00fa771273805e2c41996af6b23"
 
 react-native-device-info@^13.2.0:
   version "13.2.0"
