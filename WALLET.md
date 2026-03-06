@@ -603,7 +603,7 @@ In case vulnerabilities are reported, check to see if they apply to production a
 
 If they apply to production, start a discussion in our [#on-call](https://valora-app.slack.com/archives/C02N3AR2P2S) channel.
 
-Then if they have fixes available, update the dependencies using [Renovate](https://github.com/valora-inc/wallet/issues/1716) or manually:
+Then if they have fixes available, update the dependencies using [Renovate](https://github.com/valora-xyz/wallet/issues/1716) or manually:
 
 - If it's a direct dependency, update the dependency in `package.json`.
 - If it's a transitive dependency, you can manually remove the transitive dependency in `yarn.lock` and re-run `yarn install` to see if it can use the fixed version. If the sub dependency is pinned somewhere, you'll need to use a [yarn resolution](https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/) in `package.json` to get the fixed version. Be careful with this as it can break other dependencies depending on a specific version.
@@ -646,9 +646,9 @@ $ bash scripts/key_placer.sh decrypt
 Processing encrypted files
 Encrypted files decrypted
 .
-~/src/github.com/valora-inc/wallet/branding/valora ~/src/github.com/valora-inc/wallet
+~/src/github.com/valora-xyz/wallet/branding/valora ~/src/github.com/valora-xyz/wallet
 HEAD is now at ec0637b fix: update valora forum link (#9)
-~/src/github.com/valora-inc/wallet
+~/src/github.com/valora-xyz/wallet
 Using branding/valora
 building file list ... done
 
@@ -693,7 +693,7 @@ rm -rf $HOME/Library/Developer/Xcode/DerivedData/*
 ```
 
 [celo platform]: https://celo.org
-[wallet]: https://github.com/valora-inc/wallet
+[wallet]: https://github.com/valora-xyz/wallet
 [celo-blockchain]: https://github.com/celo-org/celo-blockchain
 [apple developer program]: https://developer.apple.com/programs/
 [detox]: https://github.com/wix/Detox
