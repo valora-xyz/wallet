@@ -1116,10 +1116,10 @@
   resolved "https://registry.yarnpkg.com/@badrap/result/-/result-0.2.13.tgz#3c23f39f7e861cfa8ac3a65726ac17b1ee364927"
   integrity sha512-Qvyzz0dmGY0h8pwvBFo1BznAKf5Y5NXIDiqhPALWtfU7oHbAToCtPu4FlYQ3uysskSWLx8GUiyhe0nv0nDd/7Q==
 
-"@craftzdog/react-native-buffer@^6.0.5":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@craftzdog/react-native-buffer/-/react-native-buffer-6.0.5.tgz#0d4fbe0dd104186d2806655e3c0d25cebdae91d3"
-  integrity sha512-Av+YqfwA9e7jhgI9GFE/gTpwl/H+dRRLmZyJPOpKTy107j9Oj7oXlm3/YiMNz+C/CEGqcKAOqnXDLs4OL6AAFw==
+"@craftzdog/react-native-buffer@6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@craftzdog/react-native-buffer/-/react-native-buffer-6.1.0.tgz#101d09d4eb5fa06b12453313b173d5036d96462f"
+  integrity sha512-lJXdjZ7fTllLbzDrwg/FrJLjQ5sBcAgwcqgAB6OPpXTHdCenEhHZblQpfmBLLe7/S7m0yKXL3kN3jpwOEkpjGg==
   dependencies:
     ieee754 "^1.2.1"
     react-native-quick-base64 "^2.0.5"
@@ -1135,26 +1135,6 @@
   integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
-
-"@divvi/cookies@^6.2.3":
-  version "6.2.3"
-  resolved "https://registry.yarnpkg.com/@divvi/cookies/-/cookies-6.2.3.tgz#1cf922bcf499bf78ed64d91494967fdf54899336"
-  integrity sha512-XSDEXNy002b9vZ3h+tKMbP82lYOGOPqbnreQh5HeRvXLdGyunvgHNztFuVtSoW2hInIoiXo1dMoBVTfwEhKnzQ==
-  dependencies:
-    invariant "^2.2.4"
-
-"@divvi/react-native-fs@^2.20.1":
-  version "2.20.1"
-  resolved "https://registry.yarnpkg.com/@divvi/react-native-fs/-/react-native-fs-2.20.1.tgz#00a75f6780a3de64aa2e05f50d9c1ddbcabd8935"
-  integrity sha512-g3k5YOBO74lKVrHczto1QYfZpD41M2uh2eiXis+HU5kFfSRuIgCV7pIpCXlYkMcTLNF8sKBF6xZZHm5XcXbJaA==
-  dependencies:
-    base-64 "^0.1.0"
-    utf8 "^3.0.0"
-
-"@divvi/react-native-keychain@^10.0.0-divvi.1":
-  version "10.0.0-divvi.1"
-  resolved "https://registry.yarnpkg.com/@divvi/react-native-keychain/-/react-native-keychain-10.0.0-divvi.1.tgz#33c0464880d248af0bc69f44b0f2e6f95b032ff3"
-  integrity sha512-3UuNLwnsNuDUm5N5318a/B1MBpyCdoJl9ZR7ehqEQukGRMvGvd3jAjisWSF1H6pnc96ly5fC/H0Z7gbjIdudlg==
 
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
@@ -1618,27 +1598,27 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
   integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
-"@fiatconnect/fiatconnect-sdk@^0.5.74":
-  version "0.5.75"
-  resolved "https://registry.yarnpkg.com/@fiatconnect/fiatconnect-sdk/-/fiatconnect-sdk-0.5.75.tgz#0a3c6a31f55a9c8dc6a58d0f443a1beab1701b8b"
-  integrity sha512-42Wp341/wR37UN6sICp4yFiyG9ISQVZgybWNCMfLpPXczjlrG7dIOEi2xjqB8rJkLZda2aaxxjs2PTjwGA+qXA==
+"@fiatconnect/fiatconnect-sdk@^0.5.163":
+  version "0.5.163"
+  resolved "https://registry.yarnpkg.com/@fiatconnect/fiatconnect-sdk/-/fiatconnect-sdk-0.5.163.tgz#f39ee56cf28ddf5a1a21b8eacf15bd009023242c"
+  integrity sha512-opYGBFalbEw2zK6IsrQrjDVAJlerhw0jUS7Oi+glEqyzVMhixatgzQyaZVh3QNiAp8pdQ/ASplEMAgP3xwPlAA==
   dependencies:
     "@badrap/result" "^0.2.13"
-    "@fiatconnect/fiatconnect-types" "^13.3.11"
+    "@fiatconnect/fiatconnect-types" "^13.3.50"
     cross-fetch "^4.1.0"
-    ethers "^6.13.5"
+    ethers "^6.16.0"
     fetch-cookie "^3.0.1"
     siwe "^3.0.0"
-    tough-cookie "^5.1.2"
+    tough-cookie "^6.0.0"
     tslib "^2.8.1"
-    zod "^3.24.2"
+    zod "^3.25.76"
 
-"@fiatconnect/fiatconnect-types@^13.3.11":
-  version "13.3.11"
-  resolved "https://registry.yarnpkg.com/@fiatconnect/fiatconnect-types/-/fiatconnect-types-13.3.11.tgz#0d212347aa98d499ef26c3e494ca8b7cfc95bf78"
-  integrity sha512-wOk81WBvEYFywM+8wqxU993s3gFX90RpcQB+I16ap6f2tF/zyp8xTC6eK//T+Fgpj3Dtmi1oeAjpTPRgXTPYuA==
+"@fiatconnect/fiatconnect-types@^13.3.50":
+  version "13.3.50"
+  resolved "https://registry.yarnpkg.com/@fiatconnect/fiatconnect-types/-/fiatconnect-types-13.3.50.tgz#b6476ff46be89e5cc2c8a86e9d91225cce744519"
+  integrity sha512-0ehS4ipUIZoS0/iGLM0G3LUcuts18CcL8qXucn/o0kyn21VGDdsAakscgHNUlzSI3EhYwSTPV2lnAjDiY7Pp1w==
   dependencies:
-    zod "^3.24.2"
+    zod "^3.25.73"
 
 "@firebase/ai@1.4.1":
   version "1.4.1"
@@ -2087,14 +2067,6 @@
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
-
-"@interaxyz/react-native-webview@^13.13.4":
-  version "13.13.4"
-  resolved "https://registry.yarnpkg.com/@interaxyz/react-native-webview/-/react-native-webview-13.13.4.tgz#a0528e4515e305edd3395e286b19c335ec08a90d"
-  integrity sha512-/TdnLQGbQ7ajYTc7KaTJ0DKPlmdIEv23IGdFpdsAf5A3nyGjsFelTapyMttRsKyqpsS6DRdUHwrUvZScaiFGIw==
-  dependencies:
-    escape-string-regexp "^4.0.0"
-    invariant "2.2.4"
 
 "@interaxyz/react-navigation-bottom-sheet@^0.3.2":
   version "0.3.2"
@@ -4781,6 +4753,34 @@
   resolved "https://registry.yarnpkg.com/@valora/prettier-config/-/prettier-config-0.0.1.tgz#5c739ce07c4d2d8b320c7b49366efa80ac98a655"
   integrity sha512-wg05yCU8Ext1jr8LEEs7dm2KakYbyg3rPxoD7ASSfGycP7HlkIfMJW6NzLTFko3CmkaFxeeydpFbgVOe36cnig==
 
+"@valora/react-native-cookies@^6.2.3":
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/@valora/react-native-cookies/-/react-native-cookies-6.2.3.tgz#227968c16f869e70729b3a551c57f7bc43902a6a"
+  integrity sha512-CjaVmb17KUc22zSJUwR35p0GtdiTJP14uPVhICfU53RbpU1ky4OE4DT/D0UsIx4v5Hm67kDWUui3tjN50FrWMw==
+  dependencies:
+    invariant "^2.2.4"
+
+"@valora/react-native-fs@^2.20.1":
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/@valora/react-native-fs/-/react-native-fs-2.20.1.tgz#fd540a3dd9cd9c762942ef9fb4d21b7bd5e582fd"
+  integrity sha512-panBdX0V1zAK2xBPbpcO20GFf9dqogsLokyI76sjlghH8jnskH4s46XQ2YwOuTBMyxuwoUKzeeGf5mgCI8FpKA==
+  dependencies:
+    base-64 "^0.1.0"
+    utf8 "^3.0.0"
+
+"@valora/react-native-keychain@^10.0.0-valora.1":
+  version "10.0.0-valora.1"
+  resolved "https://registry.yarnpkg.com/@valora/react-native-keychain/-/react-native-keychain-10.0.0-valora.1.tgz#6719e787ce3f195f9da7b12444cd860b54c64ca6"
+  integrity sha512-PB8/lD5SVk03ItEu6EGuyDl4CHkA46bdNyBpeaEVY8IhjnTtKR6wJASFjH2lklTmu01G3eYSD8nGERq+bQIaEQ==
+
+"@valora/react-native-webview@^13.13.4":
+  version "13.13.4"
+  resolved "https://registry.yarnpkg.com/@valora/react-native-webview/-/react-native-webview-13.13.4.tgz#8a5b6a1d9612086bd8adaccba0dd01c0eba5ed4a"
+  integrity sha512-SziG+MNtJPJW0t1ENzWfdgq7FdHmH4epI2EoFC5u1IQgYk9F0NuKdE4P8P6fsNkeADFN4WCwTmaByrU8AqFboQ==
+  dependencies:
+    escape-string-regexp "^4.0.0"
+    invariant "2.2.4"
+
 "@walletconnect/core@2.21.9":
   version "2.21.9"
   resolved "https://registry.yarnpkg.com/@walletconnect/core/-/core-2.21.9.tgz#456cb999b4fd33b2ce0fe64feda8f4eb08c21a9c"
@@ -4949,7 +4949,7 @@
     "@walletconnect/logger" "2.1.2"
     events "3.3.0"
 
-"@walletconnect/utils@2.21.9", "@walletconnect/utils@^2.21.9":
+"@walletconnect/utils@2.21.9":
   version "2.21.9"
   resolved "https://registry.yarnpkg.com/@walletconnect/utils/-/utils-2.21.9.tgz#305cb1c647a82519c1f9cb982fd384b6c89da157"
   integrity sha512-FHagysDvp7yQl+74veIeuqwZZnMiTyTW3Lw0NXsbIKnlmlSQu5pma+4EnRD/CnSzbN6PV39k2t1KBaaZ4PjDgg==
@@ -6924,10 +6924,10 @@ ethereum-cryptography@^2.0.0, ethereum-cryptography@^2.2.1:
     "@scure/bip32" "1.4.0"
     "@scure/bip39" "1.3.0"
 
-ethers@^6.13.5:
-  version "6.13.5"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.13.5.tgz#8c1d6ac988ac08abc3c1d8fabbd4b8b602851ac4"
-  integrity sha512-+knKNieu5EKRThQJWwqaJ10a6HE9sSehGeqWN65//wE7j47ZpFhKAnHB/JJFibwwg61I/koxaPsXbXpD/skNOQ==
+ethers@^6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.16.0.tgz#fff9b4f05d7a359c774ad6e91085a800f7fccf65"
+  integrity sha512-U1wulmetNymijEhpSEQ7Ct/P/Jw9/e7R1j5XIbPRydgV2DjLVMsULDlNksq3RQnFgKoLlZf88ijYtWEXcPa07A==
   dependencies:
     "@adraffy/ens-normalize" "1.10.1"
     "@noble/curves" "1.2.0"
@@ -8736,7 +8736,7 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
 
-lodash@^4.17.19, lodash@^4.17.21:
+lodash@^4.17.19, lodash@^4.17.21, lodash@^4.17.23:
   version "4.17.23"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
   integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
@@ -10231,6 +10231,11 @@ react-native-modal@^14.0.0-rc.1:
   dependencies:
     react-native-animatable "1.4.0"
 
+react-native-nitro-modules@>=0.29.1:
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/react-native-nitro-modules/-/react-native-nitro-modules-0.35.0.tgz#e026055bceb1e5b43a54b131d0740b8e61412b2b"
+  integrity sha512-Eho1yEcLbsteGpBFn2XZOp5FIptnEciWzuYBW49S0jo41Un2LeyesIO/MqYLY/c5o7D9Fw9th4pxGtV7OAb0+g==
+
 react-native-pager-view@^6.7.1:
   version "6.9.1"
   resolved "https://registry.yarnpkg.com/react-native-pager-view/-/react-native-pager-view-6.9.1.tgz#a9e6d9323935cc2ae1d46d7816b66f76dc3eff8e"
@@ -10263,6 +10268,11 @@ react-native-qrcode-svg@^6.3.12:
     qrcode "^1.5.1"
     text-encoding "^0.7.0"
 
+react-native-quick-base64@>=2.1.0:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-native-quick-base64/-/react-native-quick-base64-2.2.2.tgz#52005a0b455b04acc1c6ff3eb8fa220401656aae"
+  integrity sha512-WLHSifHLoamr2kF00Gov0W9ud6CfPshe1rmqWTquVIi9c62qxOaJCFVDrXFZhEBU8B8PvGLVuOlVKH78yhY0Fg==
+
 react-native-quick-base64@^2.0.5:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-native-quick-base64/-/react-native-quick-base64-2.1.2.tgz#062b09b165c1530095fe99b94544c948318dbe99"
@@ -10270,16 +10280,17 @@ react-native-quick-base64@^2.0.5:
   dependencies:
     base64-js "^1.5.1"
 
-react-native-quick-crypto@0.7.7:
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/react-native-quick-crypto/-/react-native-quick-crypto-0.7.7.tgz#2126beff48da8f5c71210fc89b93a15ce8f5f126"
-  integrity sha512-+P7MWxo0KSCCyO6rwcW654l+GYV5tVkI7cusHSL/iCahnWCisuyBLzJENzdv6MqDM9pb59QJWbrLfOzpUHZpNw==
+react-native-quick-crypto@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/react-native-quick-crypto/-/react-native-quick-crypto-1.0.16.tgz#54ec571e0497c683cb5486f60f1bfd2ad5193d08"
+  integrity sha512-UsKd6EgEl9et5FrTeYy82NHDigVSoJSLTyccWAhmO1Iri8rjgve93uzXuFP3EZPB7rwxoEmG/pCRsgESKxrw2A==
   dependencies:
-    "@craftzdog/react-native-buffer" "^6.0.5"
-    events "^3.3.0"
-    readable-stream "^4.5.2"
+    "@craftzdog/react-native-buffer" "6.1.0"
+    events "3.3.0"
+    readable-stream "4.5.2"
+    safe-buffer "^5.2.1"
     string_decoder "^1.3.0"
-    util "^0.12.5"
+    util "0.12.5"
 
 react-native-reanimated@~3.17.4:
   version "3.17.5"
@@ -10450,10 +10461,10 @@ readable-stream@3, readable-stream@^3.0.0, readable-stream@^3.1.1, readable-stre
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
-readable-stream@^4.5.2:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-4.7.0.tgz#cedbd8a1146c13dfff8dab14068028d58c15ac91"
-  integrity sha512-oIGGmcpTLwPga8Bn6/Z75SVaH1z5dUut2ibSyAMVhmUggWpmDn2dapB0n7f8nwaSiRtepAsfJyfXIO5DCVAODg==
+readable-stream@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-4.5.2.tgz#9e7fc4c45099baeed934bff6eb97ba6cf2729e09"
+  integrity sha512-yjavECdqeZ3GLXNgRXgeQEdz9fvDDkNKyHnbHRFtOr7/LcfgBcmct7t/ET+HaCTqfh06OzoAxrkN/IfjJBVe+g==
   dependencies:
     abort-controller "^3.0.0"
     buffer "^6.0.3"
@@ -10733,7 +10744,7 @@ safe-array-concat@^1.1.3:
     has-symbols "^1.1.0"
     isarray "^2.0.5"
 
-safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@~5.2.0:
+safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@^5.2.1, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
@@ -11510,12 +11521,24 @@ tldts-core@^6.1.79:
   resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-6.1.79.tgz#2d98689a161fbafe38a6640a54f5d4c88bd941a1"
   integrity sha512-HM+Ud/2oQuHt4I43Nvjc213Zji/z25NSH5OkJskJwHXNtYh9DTRlHMDFhms9dFMP7qyve/yVaXFIxmcJ7TdOjw==
 
+tldts-core@^7.0.25:
+  version "7.0.25"
+  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-7.0.25.tgz#eaee57facdfb5528383d961f5586d49784519de5"
+  integrity sha512-ZjCZK0rppSBu7rjHYDYsEaMOIbbT+nWF57hKkv4IUmZWBNrBWBOjIElc0mKRgLM8bm7x/BBlof6t2gi/Oq/Asw==
+
 tldts@^6.1.32:
   version "6.1.79"
   resolved "https://registry.yarnpkg.com/tldts/-/tldts-6.1.79.tgz#1804eddc48f8ae22a0e20937c9d92634ace7580b"
   integrity sha512-wjlYwK8lC/WcywLWf3A7qbK07SexezXjTRVwuPWXHvcjD7MnpPS2RXY5rLO3g12a8CNc7Y7jQRQsV7XyuBZjig==
   dependencies:
     tldts-core "^6.1.79"
+
+tldts@^7.0.5:
+  version "7.0.25"
+  resolved "https://registry.yarnpkg.com/tldts/-/tldts-7.0.25.tgz#e9034876e09b2ad92db547a9307ae6fa65400f8d"
+  integrity sha512-keinCnPbwXEUG3ilrWQZU+CqcTTzHq9m2HhoUP2l7Xmi8l1LuijAXLpAJ5zRW+ifKTNscs4NdCkfkDCBYm352w==
+  dependencies:
+    tldts-core "^7.0.25"
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -11560,12 +11583,19 @@ toidentifier@1.0.1:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
   integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
 
-tough-cookie@^5.0.0, tough-cookie@^5.1.2:
+tough-cookie@^5.0.0:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-5.1.2.tgz#66d774b4a1d9e12dc75089725af3ac75ec31bed7"
   integrity sha512-FVDYdxtnj0G6Qm/DhNPSb8Ju59ULcup3tuJxkFb5K8Bv2pUXILbf0xZWU8PX8Ov19OXljbUyveOFwRMwkXzO+A==
   dependencies:
     tldts "^6.1.32"
+
+tough-cookie@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-6.0.0.tgz#11e418b7864a2c0d874702bc8ce0f011261940e5"
+  integrity sha512-kXuRi1mtaKMrsLUxz3sQYvVl37B0Ns6MzfrtV5DvJceE9bPyspOqk9xxv7XbZWcfLWbFmm997vl83qUWVJA64w==
+  dependencies:
+    tldts "^7.0.5"
 
 tr46@~0.0.3:
   version "0.0.3"
@@ -11932,7 +11962,7 @@ util-deprecate@^1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
-util@^0.12.5:
+util@0.12.5, util@^0.12.5:
   version "0.12.5"
   resolved "https://registry.yarnpkg.com/util/-/util-0.12.5.tgz#5f17a6059b73db61a875668781a1c2b136bd6fbc"
   integrity sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==
@@ -12385,15 +12415,15 @@ walker@^1.0.7, walker@^1.0.8:
   dependencies:
     makeerror "1.0.12"
 
-wallet-stack@^1.0.0-alpha.127:
-  version "1.0.0-alpha.127"
-  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.127.tgz#f90c7bbb58af38a2432752637f49a127cb662c57"
-  integrity sha512-CawC3NYPkgb+xQ3edbp9bR5C8cRYCVL2rN5Lxpm7jDy1uQmMuolow/L4TsmYCeulhHx/aLeY/ubC80IHJ4tNlQ==
+wallet-stack@^1.0.0-alpha.128:
+  version "1.0.0-alpha.128"
+  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.128.tgz#5a58be911a1c734cc4c35a597b206cf0612d3949"
+  integrity sha512-eraQZAoDa7CJbiPiMWcv20Lspkw4zeCHUcFXFWKNoykRvzNJxWY1GjP8Ja88vU4AIN3UsBWBv9miTjGPcCE7Lg==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^2.0.1"
-    "@fiatconnect/fiatconnect-sdk" "^0.5.74"
-    "@fiatconnect/fiatconnect-types" "^13.3.11"
+    "@fiatconnect/fiatconnect-sdk" "^0.5.163"
+    "@fiatconnect/fiatconnect-types" "^13.3.50"
     "@gorhom/bottom-sheet" "^5.1.1"
     "@interaxyz/react-navigation-bottom-sheet" "^0.3.2"
     "@json-rpc-tools/utils" "^1.7.6"
@@ -12411,7 +12441,7 @@ wallet-stack@^1.0.0-alpha.127:
     "@types/lodash" "^4.17.15"
     "@types/seedrandom" "^3.0.8"
     "@types/uuid" "^10.0.0"
-    "@walletconnect/utils" "^2.21.9"
+    "@walletconnect/utils" "2.21.9"
     bignumber.js "^9.1.2"
     country-data "^0.0.31"
     date-fns "^4.1.0"
@@ -12429,16 +12459,19 @@ wallet-stack@^1.0.0-alpha.127:
     io-ts "2.2.22"
     is-ip "^3.1.0"
     jwt-decode "^4.0.0"
-    lodash "^4.17.21"
+    lodash "^4.17.23"
     mixpanel-react-native "^3.2.1"
     permissionless "^0.2.57"
     react-async-hook "^4.0.0"
     react-i18next "^15.4.1"
     react-native-android-open-settings "^1.3.0"
     react-native-modal "^14.0.0-rc.1"
+    react-native-nitro-modules ">=0.29.1"
     react-native-picker-select "^9.3.1"
     react-native-platform-touchable "^1.1.1"
     react-native-qrcode-svg "^6.3.12"
+    react-native-quick-base64 ">=2.1.0"
+    react-native-quick-crypto "^1.0.16"
     react-native-skeleton-placeholder "^5.2.4"
     react-native-url-polyfill "^2.0.0"
     react-redux "^9.2.0"
@@ -12847,7 +12880,12 @@ zod@3.22.4:
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
   integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
 
-zod@^3.21.4, zod@^3.24.2:
+zod@^3.21.4:
   version "3.24.2"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.2.tgz#8efa74126287c675e92f46871cfc8d15c34372b3"
   integrity sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==
+
+zod@^3.25.73, zod@^3.25.76:
+  version "3.25.76"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.76.tgz#26841c3f6fd22a6a2760e7ccb719179768471e34"
+  integrity sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==
