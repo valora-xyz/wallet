@@ -6398,11 +6398,6 @@ domutils@^3.0.1:
     domelementtype "^2.3.0"
     domhandler "^5.0.3"
 
-dot-prop-immutable@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/dot-prop-immutable/-/dot-prop-immutable-2.1.1.tgz#3a8902c3a009acad9e595fa6d92db659e645966f"
-  integrity sha512-e8PVQj1TKXwfeBPP71xvdQUR0ETh9gyhwEBX7VLIuOV7B2bLnrDyTqOzZt7P5zWgrPK+pbZbptK9Q4wZEJTb7Q==
-
 dotenv-expand@~11.0.6:
   version "11.0.7"
   resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-11.0.7.tgz#af695aea007d6fdc84c86cd8d0ad7beb40a0bd08"
@@ -12408,10 +12403,10 @@ walker@^1.0.7, walker@^1.0.8:
   dependencies:
     makeerror "1.0.12"
 
-wallet-stack@^1.0.0-alpha.130:
-  version "1.0.0-alpha.130"
-  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.130.tgz#92535053f063eeac06815984943acaefd53d7c9a"
-  integrity sha512-udawTYSLRx+B4s6a6Mbg5DUbmuwZn9orhqtZ5VXP0RfZQz1ZtEjILjZK0Nsd1vl5dugl4cCS68MOQ91ZTgtKAg==
+wallet-stack@^1.0.0-alpha.133:
+  version "1.0.0-alpha.133"
+  resolved "https://registry.yarnpkg.com/wallet-stack/-/wallet-stack-1.0.0-alpha.133.tgz#13c788d84ac1f9f470b4675b12b017c88f0c99a4"
+  integrity sha512-YI9iRh+5Y3TCkpSCVwDjjtdJWoth7OF5YShH3zYFwpxSZnJp2eyST3x4QaXyTdWl/mIQmc/vtPHi4xhw7hlR7Q==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^2.0.1"
@@ -12438,7 +12433,6 @@ wallet-stack@^1.0.0-alpha.130:
     bignumber.js "^9.1.2"
     country-data "^0.0.31"
     date-fns "^4.1.0"
-    dot-prop-immutable "^2.1.1"
     expo "^53.0.22"
     expo-image "~2.4.0"
     fast-levenshtein "^3.0.0"
