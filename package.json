@@ -6,7 +6,7 @@
   "private": true,
   "main": "index.tsx",
   "engines": {
-    "node": "24.14.1"
+    "node": "24.15.0"
   },
   "scripts": {
     "prebuild": "expo prebuild --clean",
