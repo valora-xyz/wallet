@@ -23,6 +23,9 @@
       "node": "24.15.0",
       "env": {
         "EXPO_NO_TELEMETRY": "1"
+      },
+      "ios": {
+        "image": "macos-sequoia-15.6-xcode-26.2"
       }
     },
     "mainnet": {
