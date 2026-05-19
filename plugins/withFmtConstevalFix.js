@@ -24,7 +24,10 @@ module.exports = (config) => {
   return withDangerousMod(config, [
     'ios',
     (config) => {
-      const podfilePath = path.join(config.modRequest.platformProjectRoot, 'Podfile')
+      const podfilePath = path.join(
+        config.modRequest.platformProjectRoot,
+        'Podfile',
+      )
       const contents = fs.readFileSync(podfilePath, 'utf8')
 
       if (contents.includes(FMT_POST_INSTALL_SNIPPET.trim())) {
@@ -34,18 +37,22 @@ module.exports = (config) => {
       const anchorIdx = contents.indexOf(ANCHOR)
       if (anchorIdx === -1) {
         throw new Error(
-          `withFmtConstevalFix: could not find post_install anchor "${ANCHOR}" in Podfile`
+          `withFmtConstevalFix: could not find post_install anchor "${ANCHOR}" in Podfile`,
         )
       }
 
       const closingIdx = contents.indexOf(CLOSING_PAREN_LINE, anchorIdx)
       if (closingIdx === -1) {
-        throw new Error(`withFmtConstevalFix: could not find post_install closing ")" after anchor`)
+        throw new Error(
+          `withFmtConstevalFix: could not find post_install closing ")" after anchor`,
+        )
       }
 
       const insertIdx = closingIdx + CLOSING_PAREN_LINE.length
       const patched =
-        contents.slice(0, insertIdx) + FMT_POST_INSTALL_SNIPPET + contents.slice(insertIdx)
+        contents.slice(0, insertIdx) +
+        FMT_POST_INSTALL_SNIPPET +
+        contents.slice(insertIdx)
 
       fs.writeFileSync(podfilePath, patched)
       return config
