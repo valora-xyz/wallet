@@ -3,6 +3,7 @@ const { version } = require('./package.json')
 const withAndroidAppThemeFullScreen = require('./plugins/withAndroidAppThemeFullScreen')
 const withCustomGradleProperties = require('./plugins/withCustomGradleProperties')
 const withDesugaring = require('./plugins/withDesugaring')
+const withFmtConstevalFix = require('./plugins/withFmtConstevalFix')
 
 const APP_REGISTRY_NAME = 'Valora'
 
@@ -217,6 +218,7 @@ module.exports = () => {
             ]
           : []),
         withDesugaring,
+        withFmtConstevalFix,
       ],
       locales: {
         'en-US': require('./locales/en-US.json'),
