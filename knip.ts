@@ -5,6 +5,7 @@ const config: KnipConfig = {
     'index.tsx!',
     'app.config.js!',
     'metro.config.js!',
+    'react-native.config.js!',
     '.github/scripts/*.ts',
     './scripts/**/*.{js,ts}',
   ],
