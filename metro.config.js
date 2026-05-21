@@ -1,8 +1,8 @@
 // Learn more https://docs.expo.io/guides/customizing-metro
-const { getDefaultConfig } = require('wallet-stack/metro-config')
-const { withSentryConfig } = require('@sentry/react-native/metro')
+const { getSentryExpoConfig } = require('@sentry/react-native/metro')
+const { withWalletStackConfig } = require('wallet-stack/metro-config')
 
 /** @type {import('expo/metro-config').MetroConfig} */
-const config = withSentryConfig(getDefaultConfig(__dirname))
+const config = withWalletStackConfig(getSentryExpoConfig(__dirname))
 
 module.exports = config
