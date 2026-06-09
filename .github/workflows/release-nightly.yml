@@ -17,7 +17,7 @@ jobs:
       latest-commit-hash: ${{ steps.latest-commit-hash.outputs.latest-commit-hash }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
       - id: latest-commit-hash
         name: Print latest commit
         run: echo $(git rev-parse HEAD) && echo "latest-commit-hash=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
@@ -34,7 +34,7 @@ jobs:
     name: Trigger Expo EAS nightly build
     steps:
       - name: Checkout code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           # Fetch all history for all tags and branches
           fetch-depth: 0
